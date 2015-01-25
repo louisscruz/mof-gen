@@ -1,6 +1,6 @@
 def mof(i, p)
   arr = []
-  (0..(p-1)).each do |x|
+  (0..(p-2)).each do |x|
     arr.push((i**x) % p)
   end
   return arr
