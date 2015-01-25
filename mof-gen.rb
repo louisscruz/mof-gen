@@ -1,9 +1,13 @@
 def mof(i, p)
   arr = []
+  x_swap = []
   (0..(p-2)).each do |x|
     arr.push((i**x) % p)
   end
-  return arr
+  (1..(p-1)).each do |n|
+    x_swap.push(arr.index {|item| n == item })
+  end
+  return x_swap
 end
 
-puts mof(2, 11)
+puts mof(2, 13)
