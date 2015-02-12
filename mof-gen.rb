@@ -2,7 +2,7 @@
 # i^n mod p, where p is prime and i is a primitive root of p
 # With this formula, generate a series through progressive squaring, from zero to (p-1).
 # Collect the residue, mod p and perform an x-swap with each object's index number.
-#
+# The result will be the corresponding MOF series.
 
 def mof(i, p)
   arr = []
